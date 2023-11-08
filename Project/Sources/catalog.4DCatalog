@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
-<base name="PIQS_ShoppingCart" uuid="90A318E4D1B146D1B8089DECF9323614" collation_locale="en">
+<base name="PIQS_EntitySelectionAndCollection" uuid="90A318E4D1B146D1B8089DECF9323614" collation_locale="en">
 	<schema name="DEFAULT_SCHEMA"/>
 	<table name="product" uuid="3AB9A06B56634EF3B95FA790E9933C54" id="1">
 		<field name="ID" uuid="635974757AAD42C0A48AE275889BEF45" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
