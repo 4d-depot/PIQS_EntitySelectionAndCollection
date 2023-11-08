@@ -20,9 +20,9 @@ Case of
 	Else 
 		
 		If (Shift down:C543)  //  for debug purpose only
-			$win:=Open form window:C675("HDI"; Plain form window:K39:10; Horizontally centered:K39:1; Vertically centered:K39:4)
+			$win:=Open form window:C675("PIQS"; Plain form window:K39:10; Horizontally centered:K39:1; Vertically centered:K39:4)
 		Else 
-			$win:=Open form window:C675("HDI"; Pop up form window:K39:11; Horizontally centered:K39:1; Vertically centered:K39:4)
+			$win:=Open form window:C675("PIQS"; Pop up form window:K39:11; Horizontally centered:K39:1; Vertically centered:K39:4)
 		End if 
 		
 		$options:=New object:C1471
@@ -41,7 +41,7 @@ Case of
 		// the picture size is 724 * 364
 		// these 3 commented lines can be removed when done !
 		
-		DIALOG:C40("HDI"; $options)
+		DIALOG:C40("PIQS"; $options)
 		CLOSE WINDOW:C154
 		
 		If ($options.quit=True:C214)
