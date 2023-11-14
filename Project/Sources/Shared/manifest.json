@@ -1,7 +1,7 @@
 {
-  "applicationName": "Product cart demo",
-  "description": "A demo demonstrating the usage of collection and entity selection to build a shopping cart.",
-  "details": "Select a product to add it to the shopping cart, and feel free to remove products.",
+  "applicationName": "Entity Selection/Collection demo",
+  "description": "A demo demonstrating the usage of collection and entity selection to build a product cart.",
+  "details": "Select a product to add it to the product cart, and feel free to remove products.",
   "visuals": [
     {
       "description": "Product list",

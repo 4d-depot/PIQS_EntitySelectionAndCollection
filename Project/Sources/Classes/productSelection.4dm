@@ -5,6 +5,14 @@ exposed Function getTotalPrice() : Integer
 	return This:C1470.sum("price")
 	
 	
+exposed Function checkEmptyCart()
+	
+	If (This:C1470.length=0)
+		Web Form:C1735["buttonContainer"].addCSSClass("buttonHide")
+	Else 
+		Web Form:C1735["buttonContainer"].removeCSSClass("buttonHide")
+	End if 
+	
 	
 exposed Function addToCart($productAdded : cs:C1710.productEntity) : cs:C1710.productSelection
 	var $newSel : cs:C1710.productSelection
@@ -43,9 +51,16 @@ exposed Function createOrderFromCart()  //: cs.productSelection
 			$orderedProduct.save()
 		End for each 
 		$newOrder.save()
+		
+		Web Form:C1735["buttonContainer"].addCSSClass("buttonHide")
+		
 		Web Form:C1735.setMessage("Thanks for your order N°"+String:C10($newOrder.ID)+"!")
 		
 	End if 
+	
+	
+	
+	
 	
 	
 	

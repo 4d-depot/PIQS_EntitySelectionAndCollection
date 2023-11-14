@@ -12,11 +12,19 @@
 				}
 			},
 			{
-				"id": "selectedVisual",
+				"id": "visuals",
 				"type": "scalar",
 				"namespace": "",
+				"dataType": "array",
+				"initialValue": []
+			},
+			{
+				"id": "selectedVisual",
+				"type": "scalar",
+				"from": "visuals",
+				"namespace": "",
 				"dataType": "object",
-				"initialValue": {}
+				"initialValue": "first"
 			}
 		],
 		"styles": [
@@ -74,6 +82,24 @@
 							"name": "$0",
 							"type": "Variable",
 							"datasource": "manifest"
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "x8xZDn3MqhtSdoWRfh9Zfx",
+						"events": [
+							"onload"
+						],
+						"action": "copy",
+						"datasource": {
+							"name": "manifest.visuals",
+							"type": "unknown",
+							"namespace": "",
+							"dataType": "object",
+							"from": "",
+							"target": "visuals",
+							"targetNamespace": "",
+							"targetType": "array"
 						}
 					}
 				],
@@ -493,7 +519,7 @@
 					"enableMosaic": true,
 					"enableFlex": false,
 					"flexProps": {
-						"nbOfRows": 3,
+						"nbOfRows": 2,
 						"nbOfColumns": 2
 					}
 				},

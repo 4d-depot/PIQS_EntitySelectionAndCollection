@@ -63,6 +63,13 @@
 				"parentId": null,
 				"id": "A7ydKIaqj-XvU1TecPyol",
 				"scope": "local"
+			},
+			{
+				"name": "buttonHide",
+				"content": "self {\n\tvisibility: hidden;\n\theight: 0px;\n}",
+				"parentId": null,
+				"scope": "local",
+				"id": "a7Moy_OWKcnQ1dYtTSPmn"
 			}
 		]
 	},
@@ -116,7 +123,7 @@
 					"enableMosaic": true,
 					"enableFlex": false,
 					"flexProps": {
-						"nbOfRows": 4,
+						"nbOfRows": 2,
 						"nbOfColumns": 2
 					}
 				},
@@ -730,7 +737,7 @@
 			},
 			"isCanvas": false,
 			"props": {
-				"text": "ADD TO CART",
+				"text": "ADD TO ITEM LIST",
 				"classNames": [
 					"buttonHoverEffect"
 				],
@@ -758,6 +765,22 @@
 							"datasource": "shoppingCart"
 						},
 						"feedback": true
+					},
+					{
+						"type": "method",
+						"dataclass": "productSelection",
+						"events": [
+							"onclick"
+						],
+						"id": "jEhPmR6GJCVQrZ4WMCAwhF",
+						"method": "shoppingCart.checkEmptyCart",
+						"params": [],
+						"namespace": "",
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "Variable"
+						}
 					}
 				],
 				"iconPosition": "hidden",
@@ -810,7 +833,7 @@
 					"width": "440px",
 					"minWidth": "440-",
 					"borderWidth": "0px",
-					"marginTop": "-165px"
+					"marginTop": "-190px"
 				},
 				"datasource": "shoppingCart",
 				"gridProps": {
@@ -819,7 +842,7 @@
 					"enableMosaic": true,
 					"enableFlex": false,
 					"flexProps": {
-						"nbOfRows": 3,
+						"nbOfRows": 2,
 						"nbOfColumns": 2
 					}
 				},
@@ -1163,6 +1186,23 @@
 							"type": "Variable",
 							"datasource": "shoppingCart"
 						}
+					},
+					{
+						"type": "method",
+						"dataclass": "productSelection",
+						"events": [
+							"onclick"
+						],
+						"id": "5NDVDT4BAuYDshgiSHiQNQ",
+						"method": "shoppingCart.checkEmptyCart",
+						"params": [],
+						"namespace": "",
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "Variable",
+							"datasource": ""
+						}
 					}
 				],
 				"iconPosition": "hidden",
@@ -1389,7 +1429,7 @@
 					"borderRadius": "12px",
 					"marginBottom": "0px"
 				},
-				"imgSrc": "/$shared/assets/images/emptyCart_wajP8nAU5ro26eAdoWsmkQ.jpg.jpeg"
+				"imgSrc": "/$shared/assets/images/empty.jpg"
 			},
 			"displayName": "Image",
 			"custom": {},
@@ -1490,7 +1530,7 @@
 						"type": "paragraph",
 						"children": [
 							{
-								"text": "CART ($",
+								"text": "ITEM LIST ($",
 								"bold": false,
 								"italic": false,
 								"underlined": false,
@@ -1690,12 +1730,14 @@
 					"paddingBottom": "12px",
 					"borderRadius": "20px",
 					"width": "fit-content",
-					"marginTop": "0px"
-				}
+					"marginTop": "0px",
+					"gap": "0px"
+				},
+				"serverSideRef": "orderButton"
 			},
 			"displayName": "Button",
 			"custom": {},
-			"parent": "SL4AB73kA9",
+			"parent": "QQwtk2UN2K",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {
@@ -1748,7 +1790,7 @@
 			"hidden": false,
 			"nodes": [
 				"dxbIlik1wy",
-				"9XR4sH24QN"
+				"QQwtk2UN2K"
 			],
 			"linkedNodes": {}
 		},
@@ -1917,7 +1959,7 @@
 						"type": "paragraph",
 						"children": [
 							{
-								"text": "Shopping cart is a also an Entity Selection of ProductEntity.",
+								"text": "Item list is a also an Entity Selection of ProductEntity.",
 								"bold": false,
 								"italic": false,
 								"underlined": false,
@@ -1983,6 +2025,32 @@
 			"parent": "wLStrbk4V5",
 			"hidden": false,
 			"nodes": [],
+			"linkedNodes": {}
+		},
+		"QQwtk2UN2K": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"serverSideRef": "buttonContainer",
+				"classNames": [
+					"buttonHide"
+				],
+				"style": {
+					"display": "flex",
+					"flexDirection": "row",
+					"justifyContent": "center"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "SL4AB73kA9",
+			"hidden": false,
+			"nodes": [
+				"9XR4sH24QN"
+			],
 			"linkedNodes": {}
 		}
 	}

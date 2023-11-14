@@ -116,7 +116,7 @@
 					"enableMosaic": true,
 					"enableFlex": false,
 					"flexProps": {
-						"nbOfRows": 4,
+						"nbOfRows": 2,
 						"nbOfColumns": 2
 					}
 				},
@@ -730,7 +730,7 @@
 			},
 			"isCanvas": false,
 			"props": {
-				"text": "ADD TO CART",
+				"text": "ADD TO ITEM LIST",
 				"classNames": [
 					"Button2hoverEffect"
 				],
@@ -868,7 +868,7 @@
 					"enableMosaic": true,
 					"enableFlex": false,
 					"flexProps": {
-						"nbOfRows": 3,
+						"nbOfRows": 2,
 						"nbOfColumns": 2
 					}
 				},
@@ -1434,7 +1434,7 @@
 					"borderRadius": "12px",
 					"marginBottom": "0px"
 				},
-				"imgSrc": "/$shared/assets/images/emptyCart_wajP8nAU5ro26eAdoWsmkQ.jpg.jpeg"
+				"imgSrc": "/$shared/assets/images/empty.jpg"
 			},
 			"displayName": "Image",
 			"custom": {},
@@ -1721,7 +1721,7 @@
 						"type": "paragraph",
 						"children": [
 							{
-								"text": "CART ($",
+								"text": "ITEM LIST ($",
 								"bold": false,
 								"italic": false,
 								"underlined": false,
@@ -1899,7 +1899,7 @@
 						"type": "paragraph",
 						"children": [
 							{
-								"text": "Shopping cart is a collection of objects in memory.",
+								"text": "Product cart is a collection of objects in memory.",
 								"bold": false,
 								"italic": false,
 								"underlined": false,
